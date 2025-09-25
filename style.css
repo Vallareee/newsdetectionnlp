@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+textarea {
+  width: 80%;          /* instead of 100%, make it narrower */
+  display: block;      /* required for margin auto */
+  margin: 0 auto 20px; /* centers it */
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+}
+
+textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #d3d3d3; /* light grey */
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(50, 50, 50, 0.6); /* dark grey shadow */
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #b0b0b0;
+  transform: translateY(-2px);
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Result color codes */
+.result.true {
+  color: green;
+}
+
+.result.false {
+  color: red;
+}
+
+.result.misleading {
+  color: orange;
+}
