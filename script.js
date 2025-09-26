@@ -26,6 +26,7 @@ function showResult(label) {
   resultDiv.textContent = "Result: " + label;
 
   // Reset classes
+  //comment
   resultDiv.className = "result";
 
   // Add color-coded class
