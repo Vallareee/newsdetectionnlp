@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake News Detection</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="container">
+      <h1>Fake News Detection</h1>
+      <p class="lead">Check a claim, a photo, or both. Text uses the college TF-IDF + ML formula. Images are reverse-searched; the first appearance is matched with your caption, then scored the same way. Results are a demo, not a verdict from journalists.</p>
+
+      <div class="modes" role="tablist">
+        <button type="button" class="mode active" data-mode="text">Text</button>
+        <button type="button" class="mode" data-mode="image">Image</button>
+        <button type="button" class="mode" data-mode="both">Text + image</button>
+      </div>
+
+      <label id="textLabel" for="newsInput">Enter to check:</label>
+      <textarea id="newsInput" rows="5" placeholder="Paste or type news text here..."></textarea>
+
+      <div id="imagePanel" class="image-panel hidden">
+        <label class="dropzone" for="imageInput">
+          <input id="imageInput" type="file" accept="image/*" capture="environment">
+          <span id="dropLabel">Tap to upload a photo, or take one on mobile</span>
+        </label>
+        <img id="preview" alt="Upload preview" class="preview hidden">
+      </div>
+
+      <button type="button" id="checkBtn">Check</button>
+      <p id="status" class="status" hidden></p>
+      <div id="result" class="result"></div>
+    </section>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+flask==3.1.2
+flask-cors==5.0.1
+python-dotenv==1.1.0
+pandas==2.3.3
+numpy==2.2.6
+scikit-learn==1.7.2
+joblib==1.5.2
+requests==2.32.5
+beautifulsoup4==4.14.2
+pillow==11.3.0
+python-dateutil==2.9.0.post0
+gunicorn==23.0.0
